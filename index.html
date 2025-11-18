@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PulseHub Arcade</title>
-  <!-- Link to your CSS (this is what applies the wallpaper) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Banner -->
   <header>
-     Welcome to PulseHub Arcade
+    🍂 Welcome to PulseHub Arcade 🍂
+    <!-- Hamburger button -->
+    <span class="open-btn" onclick="openSidebar()">☰</span>
   </header>
 
   <!-- Sidebar -->
-  <div class="sidebar">
+  <div id="sidebar" class="sidebar">
+    <!-- Close button -->
+    <span class="close-btn" onclick="closeSidebar()">✖</span>
     <h2>Menu</h2>
     <a href="index.html">Home</a>
     <a href="#games">Games</a>
@@ -46,5 +49,8 @@
     </section>
   </main>
 
+  <!-- Link external JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
+
