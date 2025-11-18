@@ -1,1 +1,56 @@
+/* Background */
+body {
+  background-image: url("images/thanksgiving.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
 
+/* Banner (top header) */
+header {
+  background-color: #b34700; /* warm pumpkin orange */
+  color: #fff8dc;            /* cornsilk for soft contrast */
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 5px solid #8b0000; /* deep cranberry red accent */
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f4a460; /* sandy brown */
+  width: 200px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #3e2723; /* dark brown text */
+  border-right: 5px solid #d2691e; /* chocolate accent */
+}
+
+.sidebar a {
+  display: block;
+  color: #fff8dc; /* cornsilk links */
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #8b0000; /* cranberry red buttons */
+}
+
+.sidebar a:hover {
+  background-color: #ff8c00; /* dark orange hover */
+  color: #fff;
+}
+
+/* Main content area */
+main {
+  margin-left: 220px; /* space for sidebar */
+  padding: 20px;
+  color: #fff8dc; /* soft cornsilk text */
+}
