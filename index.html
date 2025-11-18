@@ -1,55 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PulseHub Arcade</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Banner -->
-  <header>
-    🍂 Welcome to PulseHub Arcade 🍂
-    <!-- Hamburger button -->
+  <header onclick="location.href='index.html'">
+    🍂 PulseHub Arcade 🍂
     <span class="open-btn" onclick="openSidebar()">☰</span>
   </header>
 
-  <!-- Sidebar -->
   <div id="sidebar" class="sidebar">
-    <!-- Close button -->
-    <span class="close-btn" onclick="closeSidebar()">✖</span>
-    <h2>Menu</h2>
+    <a href="javascript:void(0)" onclick="closeSidebar()">x</a>
     <a href="index.html">Home</a>
-    <a href="#games">Games</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About the Creator</a>
   </div>
 
-  <!-- Main Content -->
   <main>
-    <section id="home">
-      <h1>Happy Thanksgiving!</h1>
-      <p>PulseHub is your seasonal arcade hub — a place to relax, play, and enjoy festive vibes.</p>
-    </section>
-
-    <section id="games">
-      <h2>Games</h2>
-      <p>Our collection of browser games will appear here soon.</p>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>PulseHub is a fun project hosted on GitHub Pages. It’s all about bringing joy through simple, accessible games.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to collaborate or share ideas? Reach out via GitHub!</p>
-    </section>
+    <h1>Happy Thanksgiving!</h1>
+    <p>PulseHub is your seasonal arcade hub — a place to relax, play, and enjoy festive vibes.</p>
   </main>
 
-  <!-- Link external JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
