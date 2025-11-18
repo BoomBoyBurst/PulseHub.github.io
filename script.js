@@ -1,5 +1,3 @@
-// script.js
-
 function openSidebar() {
   document.getElementById("sidebar").style.left = "0";
 }
