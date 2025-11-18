@@ -1,56 +1,78 @@
 /* Background */
 body {
-  background-image: url("images/wallpaperflare.com_wallpaper(8).jpg");
+  background-image: url("images/thanksgiving.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   font-family: "Arial", sans-serif;
+  color: black; /* main text is black */
 }
 
-/* Banner (top header) */
+/* Banner */
 header {
-  background-color: #b34700; /* warm pumpkin orange */
-  color: #fff8dc;            /* cornsilk for soft contrast */
+  background-color: #b34700;
+  color: #fff8dc;
   text-align: center;
   padding: 20px;
   font-size: 2em;
   font-weight: bold;
-  border-bottom: 5px solid #8b0000; /* deep cranberry red accent */
+  border-bottom: 5px solid #8b0000;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* hover shading */
+}
+
+/* Hamburger button */
+.open-btn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: black;
+  z-index: 1001;
 }
 
 /* Sidebar */
 .sidebar {
-  background-color: #f4a460; /* sandy brown */
+  background-color: #f4a460;
   width: 200px;
   height: 100vh;
   padding: 20px;
   position: fixed;
   top: 0;
-  left: 0;
-  color: #3e2723; /* dark brown text */
-  border-right: 5px solid #d2691e; /* chocolate accent */
+  left: -220px;
+  transition: left 0.4s ease;
+  color: black;
+  border-right: 5px solid #d2691e;
+  border-radius: 0 10px 10px 0;
+  z-index: 1000;
 }
 
+/* Sidebar links */
 .sidebar a {
   display: block;
-  color: #fff8dc; /* cornsilk links */
+  color: black;
   text-decoration: none;
   margin: 10px 0;
   padding: 8px;
   border-radius: 5px;
-  background-color: #8b0000; /* cranberry red buttons */
+  background-color: #fff8dc;
 }
 
 .sidebar a:hover {
-  background-color: #ff8c00; /* dark orange hover */
-  color: #fff;
+  background-color: #ff8c00;
+  color: white;
 }
 
-/* Main content area */
+/* Main content */
 main {
-  margin-left: 220px; /* space for sidebar */
+  margin-left: 20px;
   padding: 20px;
-  color: #fff8dc; /* soft cornsilk text */
 }
