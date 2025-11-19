@@ -1,6 +1,6 @@
 /* Background */
 body {
-  background-image: url("images/wallpaperflare.com_wallpaper(8).jpg");
+  background-image: url("images/thanksgiving.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,8 +12,8 @@ body {
 
 /* Banner */
 header {
-  background-color: #b34700;
-  color: #fff8dc;
+  background-color: #b34700; /* pumpkin orange */
+  color: #fff8dc;            /* cornsilk */
   text-align: center;
   padding: 20px;
   font-size: 2em;
@@ -28,27 +28,37 @@ header:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* hover shading */
 }
 
-/* Hamburger button */
+/* Toggle button (hamburger/X) */
 .open-btn {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 60px; /* lowered a bit */
   font-size: 1.5em;
   cursor: pointer;
   color: black;
+  background-color: #fff8dc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   z-index: 1001;
+}
+
+.open-btn:hover {
+  background-color: #ff8c00;
+  color: white;
 }
 
 /* Sidebar */
 .sidebar {
-  background-color: #f4a460;
+  background-color: #f4a460; /* sandy brown */
   width: 200px;
   height: 100vh;
   padding: 20px;
   position: fixed;
-  top: 0;
-  left: -220px;
-  transition: left 0.4s ease;
+  top: 80px; /* starts below banner */
+  left: -220px; /* hidden by default */
+  opacity: 0;
+  transition: left 0.4s ease, opacity 0.4s ease;
   color: black;
   border-right: 5px solid #d2691e;
   border-radius: 0 10px 10px 0;
