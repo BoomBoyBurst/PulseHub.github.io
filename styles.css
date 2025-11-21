@@ -7,10 +7,13 @@ body, html {
   min-height: 100vh;
 }
 
+/* Background image block */
 .background {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: url('images/bright-composition-pumpkins-maple-leaves.jpg') no-repeat center center;
   background-size: cover;
   z-index: -1;
@@ -98,4 +101,49 @@ body, html {
   color: #6c3b00;
   font-size: 1.18em;
   box-shadow: 0 2px 8px rgba(210, 153, 46, 0.09);
+}
+
+/* Example grid styling (for your games page) */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+.game-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #fac66c77;
+  padding: 32px 18px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: #392000;
+  font-size: 1.18em;
+  font-weight: 600;
+}
+.game-tile:hover {
+  box-shadow: 0 8px 28px #e49d2fbb, 0 2px 8px #c28f32a0;
+  transform: translateY(-5px) scale(1.04);
+  background: #ffe5b3d6;
+  color: #7c4200;
+}
+.game-title {
+  margin: 0;
+  font-size: 1.08em;
+  text-align: center;
+}
+.game-icon {
+  width: 62px;
+  height: 62px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px #b68632bb;
+  background: #fff7ee;
 }
