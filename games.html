@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pulse Hub - Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 32px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+    }
+    .game-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.9);
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #fac66c77;
+      padding: 32px 18px;
+      transition: box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      color: #392000;
+      font-size: 1.18em;
+      font-weight: 600;
+    }
+    .game-tile:hover {
+      box-shadow: 0 8px 28px #e49d2fbb, 0 2px 8px #c28f32a0;
+      transform: translateY(-5px) scale(1.04);
+      background: #ffe5b3d6;
+      color: #7c4200;
+    }
+    .game-title {
+      margin: 0;
+      font-size: 1.08em;
+      text-align: center;
+    }
+    /* Example: If you want icons or images */
+    .game-icon {
+      width: 62px;
+      height: 62px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px #b68632bb;
+      background: #fff7ee;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <header class="main-header">
+    <h1 class="site-title"><a href="index.html">Pulse Hub</a></h1>
+    <nav class="nav-buttons">
+      <a href="games.html">Games</a>
+      <a href="about.html">About the Creator</a>
+      <a href="request.html">Request a Game</a>
+    </nav>
+  </header>
+  <main class="update-log">
+    <h2>Games Library</h2>
+    <div class="game-grid">
+      <a class="game-tile" href="https://ragdollhit2.github.io/" target="_blank">
+        <!-- <img class="game-icon" src="images/game1.png" alt="Game One"> -->
+        <span class="game-title">Ragdoll Hit</span>
+      </a>
+      <a class="game-tile" href="https://anonymousbirb5100.github.io/drive-mad/drive-mad-new/" target="_blank">
+        <!-- <img class="game-icon" src="images/game2.png" alt="Game Two"> -->
+        <span class="game-title">Drive Mad</span>
+      </a>
+      <a class="game-tile" href="https://luqman.gmsexpress.org/misc/misc/eloader/versions/1.12.2-wasm/" target="_blank">
+        <span class="game-title">Eaglercraft 1.12 WASM</span>
+      </a>
+      <!-- Add more games below -->  
+    </div>
+  </main>
+</body>
+</html>
